@@ -1,4 +1,4 @@
-# Xray Classification
+# Parse Doc Classification
 
 ### Setup AWS CLI
 ```bash

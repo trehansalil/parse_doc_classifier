@@ -1,4 +1,8 @@
 # AWS CLI Installation
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+# curl "https://drive.google.com/uc?id=1cHwKEGOGLwQtiZWEAJ1jLoaMbHlDmSNh" -o "MLE-2.zip"
+# unzip "MLE-2.zip"
+
+filename="MLE-2.zip"
+fileid="1cHwKEGOGLwQtiZWEAJ1jLoaMbHlDmSNh"
+
+curl "https://drive.usercontent.google.com/download?id={fileId}&confirm=xxx" -o {filename}
