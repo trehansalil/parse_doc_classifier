@@ -12,7 +12,7 @@ class DataIngestionConfig:
         self.TRAIN_DATA_ARTIFACTS_DIR = TRAIN_DATA_DIR
         self.TEST_DATA_ARTIFACTS_DIR = TEST_DATA_DIR
         self.TRAIN_CSV_ARTIFACTS_DIR = TRAIN_CSV_DIR
-        self.TEST_CSV_ARTIFACTS_DIR = TEST_CSV_DIR        
+        self.TEST_CSV_ARTIFACTS_DIR = TEST_CSV_DIR
 
 # @dataclass        
 # class DataValidationConfig:
