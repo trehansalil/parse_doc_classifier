@@ -2,10 +2,10 @@ import os
 import sys
 import inspect
 import pandas as pd
-from xray.logger import logging
-from xray.exception import CustomException
-from xray.entity.config_entity import DataValidationConfig
-from xray.entity.artifact_entity import DataValidationArtifact
+from parse_doc.logger import logging
+from parse_doc.exception import CustomException
+from parse_doc.entity.config_entity import DataValidationConfig
+from parse_doc.entity.artifact_entity import DataValidationArtifact
 
 
 class DataValidation:

@@ -9,15 +9,20 @@ requirement_file_name = "requirements_dev.txt"
 # common constants
 TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 ARTIFACTS_DIR = os.path.join("artifacts", TIMESTAMP)
-S3_DATA_FOLDER:str = 'data'
-BUCKET_NAME = 'lungxraydataset'
+GDRIVE_URL:str = "https://drive.google.com/uc?id=1cHwKEGOGLwQtiZWEAJ1jLoaMbHlDmSNh"
+
 
 
 
 # Data ingestion constants
-DATA_INGESTION_ARTIFACTS_DIR = "DataIngestionArtifacts"
-TRAIN_DATA_DIR = "train"
-TEST_DATA_DIR = "test"
+DATA_INGESTION_ARTIFACTS_DIR = os.path.join(ARTIFACTS_DIR, "DataIngestionArtifacts")
+ZIP_FILE_EXPORT_DIR = os.path.join(DATA_INGESTION_ARTIFACTS_DIR, "MLE-2.zip")
+
+TRAIN_DATA_DIR = os.path.join(DATA_INGESTION_ARTIFACTS_DIR, "MLE-2 parspec", "train")
+TEST_DATA_DIR = os.path.join(DATA_INGESTION_ARTIFACTS_DIR, "MLE-2 parspec", "test")
+
+TRAIN_CSV_DIR = os.path.join(DATA_INGESTION_ARTIFACTS_DIR, "MLE-2 parspec", "train.csv")
+TEST_CSV_DIR = os.path.join(DATA_INGESTION_ARTIFACTS_DIR, "MLE-2 parspec", "test.csv")
 
 
 # # Data validation constants

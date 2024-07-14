@@ -1,7 +1,7 @@
 import sys
 
-from xray.exception import CustomException
-from xray.pipeline.train_pipeline import TrainPipeline
+from parse_doc.exception import CustomException
+from parse_doc.pipeline.train_pipeline import TrainPipeline
 
 
 def start_training():

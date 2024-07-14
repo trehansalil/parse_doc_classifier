@@ -6,7 +6,7 @@ import torch
 from bentoml.io import Image, Text
 from PIL import Image as PILImage
 
-from xray.constants import *
+from parse_doc.constants import *
 
 bento_model = bentoml.pytorch.get(BENTOML_MODEL_NAME)
 runner = bento_model.to_runner()

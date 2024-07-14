@@ -6,15 +6,15 @@ from torch.nn import CrossEntropyLoss, Module
 from torch.optim import SGD, Optimizer
 from torch.utils.data import DataLoader
 
-from xray.entity.artifact_entity import (
+from parse_doc.entity.artifact_entity import (
     DataTransformationArtifact,
     ModelEvaluationArtifact,
     ModelTrainerArtifact,
 )
-from xray.entity.config_entity import ModelEvaluationConfig
-from xray.exception import CustomException
-from xray.logger import logging
-from xray.ml.model import Net
+from parse_doc.entity.config_entity import ModelEvaluationConfig
+from parse_doc.exception import CustomException
+from parse_doc.logger import logging
+from parse_doc.ml.model import Net
 
 class ModelEvaluation:
     def __init__(

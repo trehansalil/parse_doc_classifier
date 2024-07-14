@@ -1,18 +1,18 @@
 import inspect
 import sys
-from xray.logger import logging
-from xray.exception import CustomException
-from xray.components.data_ingestion import DataIngestion
-from xray.components.data_transformation import DataTransformation
-from xray.components.model_trainer import ModelTrainer
-from xray.components.model_evaluation import ModelEvaluation
-from xray.components.model_pusher import ModelPusher
-from xray.entity.config_entity import (DataIngestionConfig, 
+from parse_doc.logger import logging
+from parse_doc.exception import CustomException
+from parse_doc.components.data_ingestion import DataIngestion
+from parse_doc.components.data_transformation import DataTransformation
+from parse_doc.components.model_trainer import ModelTrainer
+from parse_doc.components.model_evaluation import ModelEvaluation
+from parse_doc.components.model_pusher import ModelPusher
+from parse_doc.entity.config_entity import (DataIngestionConfig, 
                                        DataTransformationConfig, 
                                        ModelTrainerConfig, 
                                        ModelEvaluationConfig, 
                                        ModelPusherConfig)
-from xray.entity.artifact_entity import (DataIngestionArtifact, 
+from parse_doc.entity.artifact_entity import (DataIngestionArtifact, 
                                          DataTransformationArtifact, 
                                          ModelTrainerArtifact,
                                          ModelEvaluationArtifact, 

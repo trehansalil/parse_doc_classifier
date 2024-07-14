@@ -10,15 +10,15 @@ from torch.optim import Optimizer
 from torch.optim.lr_scheduler import StepLR, _LRScheduler
 from tqdm import tqdm
 
-from xray.constants import *
-from xray.entity.artifact_entity import (
+from parse_doc.constants import *
+from parse_doc.entity.artifact_entity import (
     DataTransformationArtifact,
     ModelTrainerArtifact,
 )
-from xray.entity.config_entity import ModelTrainerConfig
-from xray.exception import CustomException
-from xray.logger import logging
-from xray.ml.model import Net
+from parse_doc.entity.config_entity import ModelTrainerConfig
+from parse_doc.exception import CustomException
+from parse_doc.logger import logging
+from parse_doc.ml.model import Net
 
 class ModelTrainer:
     def __init__(self, model_trainer_config: ModelTrainerConfig, 

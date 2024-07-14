@@ -1,13 +1,13 @@
-from xray.pipeline.train_pipeline import TrainingPipeline
+from parse_doc.pipeline.train_pipeline import TrainingPipeline
 from fastapi import FastAPI
 import uvicorn
 import sys
 from fastapi.templating import Jinja2Templates
 from starlette.responses import RedirectResponse
 from fastapi.responses import Response
-from xray.pipeline.prediction_pipeline import PredictionPipeline
-from xray.exception import CustomException
-from xray.constants import *
+from parse_doc.pipeline.prediction_pipeline import PredictionPipeline
+from parse_doc.exception import CustomException
+from parse_doc.constants import *
 
 
 text:str = "What is machine learing?"

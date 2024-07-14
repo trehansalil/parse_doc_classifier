@@ -1,10 +1,10 @@
 import os
 import sys
 import inspect
-from xray.logger import logging
-from xray.exception import CustomException
-from xray.entity.config_entity import ModelPusherConfig
-from xray.entity.artifact_entity import ModelPusherArtifact
+from parse_doc.logger import logging
+from parse_doc.exception import CustomException
+from parse_doc.entity.config_entity import ModelPusherConfig
+from parse_doc.entity.artifact_entity import ModelPusherArtifact
 
 class ModelPusher:
     def __init__(self, model_pusher_config: ModelPusherConfig):

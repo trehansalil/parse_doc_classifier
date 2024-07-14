@@ -7,13 +7,13 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 
-from xray.entity.artifact_entity import (
+from parse_doc.entity.artifact_entity import (
     DataIngestionArtifact,
     DataTransformationArtifact,
 )
-from xray.entity.config_entity import DataTransformationConfig
-from xray.exception import CustomException
-from xray.logger import logging
+from parse_doc.entity.config_entity import DataTransformationConfig
+from parse_doc.exception import CustomException
+from parse_doc.logger import logging
 
 
 class DataTransformation:

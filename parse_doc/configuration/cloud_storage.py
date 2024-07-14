@@ -1,7 +1,7 @@
 import os
 import sys
 
-from xray.exception import CustomException
+from parse_doc.exception import CustomException
 
 
 class S3Operation:

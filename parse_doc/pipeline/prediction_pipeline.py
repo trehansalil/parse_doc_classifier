@@ -5,13 +5,13 @@ import keras
 import pickle
 import inspect
 from PIL import Image
-from xray.logger import logging
-from xray.constants import *
-from xray.exception import CustomException
-from xray.configuration.cloud_storage import S3Operation
-from xray.components.data_transformation import DataTransformation
-from xray.entity.config_entity import DataTransformationConfig
-from xray.entity.artifact_entity import DataIngestionArtifact
+from parse_doc.logger import logging
+from parse_doc.constants import *
+from parse_doc.exception import CustomException
+from parse_doc.configuration.cloud_storage import S3Operation
+from parse_doc.components.data_transformation import DataTransformation
+from parse_doc.entity.config_entity import DataTransformationConfig
+from parse_doc.entity.artifact_entity import DataIngestionArtifact
 
 
 class PredictionPipeline:

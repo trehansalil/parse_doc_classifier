@@ -1,16 +1,18 @@
 from dataclasses import dataclass
-from xray.constants import *
+from parse_doc.constants import *
 import os
 from torch import device
 
 @dataclass
 class DataIngestionConfig:
     def __init__(self):
-        self.S3_DATA_FOLDER: str = S3_DATA_FOLDER
-        self.BUCKET_NAME: str = BUCKET_NAME
-        self.DATA_INGESTION_ARTIFACTS_DIR = os.path.join(os.getcwd(), ARTIFACTS_DIR, DATA_INGESTION_ARTIFACTS_DIR, S3_DATA_FOLDER)
-        self.TRAIN_DATA_ARTIFACTS_DIR: str = os.path.join(self.DATA_INGESTION_ARTIFACTS_DIR, TRAIN_DATA_DIR)
-        self.TEST_DATA_ARTIFACTS_DIR: str = os.path.join(self.DATA_INGESTION_ARTIFACTS_DIR, TEST_DATA_DIR)
+        self.GDRIVE_URL: str = GDRIVE_URL
+        self.ZIP_FILE_EXPORT_DIR: str = ZIP_FILE_EXPORT_DIR
+        self.DATA_INGESTION_ARTIFACTS_DIR = DATA_INGESTION_ARTIFACTS_DIR
+        self.TRAIN_DATA_ARTIFACTS_DIR = TRAIN_DATA_DIR
+        self.TEST_DATA_ARTIFACTS_DIR = TEST_DATA_DIR
+        self.TRAIN_CSV_ARTIFACTS_DIR = TRAIN_CSV_DIR
+        self.TEST_CSV_ARTIFACTS_DIR = TEST_CSV_DIR        
 
 # @dataclass        
 # class DataValidationConfig:
